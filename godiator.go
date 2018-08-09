@@ -1,6 +1,6 @@
-// Package godiator is simple Pub&Sub package
-// You can simply adds any numbers of events and adds any numbers of handlers
-// You can publish events and handles this events with your handlers
+// Package godiator is simple Pub&Sub package.
+// You can simply adds any numbers of events and adds any numbers of handlers.
+// You can publish events and handles this events with your handlers.
 package godiator
 
 import (
@@ -15,7 +15,7 @@ func NewGodiator() *Godiator {
 }
 
 // Subscribe events with event name and binds with event handler
-// Also this method returns godiator instance you can chain any number of handlers same or different events
+// also this method returns godiator instance you can chain any number of handlers same or different events.
 func (gb *Godiator) Subscribe(eventName string, eventHandler Handler) *Godiator {
 	if currentEventHandlers, ok := gb.subscriptions[eventName]; ok {
 		gb.subscriptions[eventName] = append(currentEventHandlers, eventHandler)
@@ -28,8 +28,8 @@ func (gb *Godiator) Subscribe(eventName string, eventHandler Handler) *Godiator 
 	return gb
 }
 
-// Publish events to correct handlers
-// Also this method returns error if it can`t find any handlers for event
+// Publish events to correct handlers,
+// also this method returns error if it can`t find any handlers for event.
 func (gb *Godiator) Publish(event Event) error {
 	if len(event.Name) <= 0 {
 		return fmt.Errorf("Can`t specify event name, maybe you remember adds `Name` parameter")
