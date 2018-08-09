@@ -36,3 +36,6 @@ func main() {
 
 }
 ```
+
+### TODO ###
+- Async message handling (just for now it's just handling sync)
