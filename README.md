@@ -1,12 +1,16 @@
 # godiator
 Godiator is Simple Pub&Sub implementation For Golang.
 
-## Simple Usage Example
+### Get Package
 
-```
+```go get github.com/blueskan/godiator```
+
+### Simple Usage Example
+
+```go
 package main
 
-import "fmt"
+import "github.com/blueskan/godiator"
 
 func main() {
 	godiator := NewGodiator()
