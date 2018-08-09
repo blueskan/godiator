@@ -38,7 +38,7 @@ func main() {
 ```
 `You can send any type of payload maps, arrays, another structs or even nil (default value)`
 
-### Godoc ###
+### GoDoc ###
 
 https://godoc.org/github.com/blueskan/godiator
 
