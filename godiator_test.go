@@ -4,7 +4,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "godiator"
+	. "github.com/blueskan/godiator"
 )
 
 var _ = Describe("Godiator", func() {
