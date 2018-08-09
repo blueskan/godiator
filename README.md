@@ -14,6 +14,8 @@ Godiator is Simple Pub&Sub implementation For Golang.
 package main
 
 import (
+    "fmt"
+
     . "github.com/blueskan/godiator"
 )
 
