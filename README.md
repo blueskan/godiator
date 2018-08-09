@@ -27,18 +27,18 @@ func main() {
 		Subscribe("notification:user:registration", func(event Event) {
 			// E-mail handler
 
-			fmt.Println(event.payload.(string) + ": Sending email...")
+			fmt.Println(event.Payload.(string) + ": Sending email...")
 		}).
 		Subscribe("notification:user:registration", func(event Event) {
 			// Sms handler
 
-			fmt.Println(event.payload.(string) + ": Sending sms...")
+			fmt.Println(event.Payload.(string) + ": Sending sms...")
 		})
 
 	// Publish
 	godiator.Publish(Event{
-		name:    "notification:user:registration",
-		payload: "New user created",
+		Name:    "notification:user:registration",
+		Payload: "New user created",
 	})
 
 }
