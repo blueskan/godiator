@@ -1,4 +1,7 @@
 # godiator
+
+[![Build Status](https://travis-ci.org/blueskan/godiator.svg?branch=master)](https://travis-ci.org/blueskan/godiator)
+
 Godiator is Simple Pub&Sub implementation For Golang.
 
 ### Get Package
