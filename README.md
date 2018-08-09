@@ -38,5 +38,10 @@ func main() {
 ```
 `You can send any type of payload maps, arrays, another structs or even nil (default value)`
 
+### Go-Docs ###
+
+https://godoc.org/github.com/blueskan/godiator
+
 ### TODO ###
 - Async message handling (just for now it's just handling sync)
+- Any pull requests or ideas will be appreciated
